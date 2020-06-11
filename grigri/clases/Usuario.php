@@ -76,7 +76,7 @@ class Usuario extends Persona{
     public function guardar() {
     	parent::guardar();
 
-        $sql = "INSERT INTO Usuario (id_usuario, usearname, contrasena) VALUES (NULL, '$this->_usarname', '$this->_password')";
+        $sql = "INSERT INTO Usuario (id_usuario, usearname, contrasena) VALUES (NULL, '$this->_username', '$this->_password')";
 
         $mysql = new MySQL();
         $idInsertado = $mysql->insertar($sql);

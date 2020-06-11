@@ -154,13 +154,12 @@ class Persona {
 
         return $this;
     }
-/*
-    public function __construct($nombre,$apellido,$fecha_nacimiento) {
+    
+    public function __construct($nombre,$apellido) {
         $this->_nombre = $nombre;
         $this->_apellido = $apellido;
-        $this->_fechaNacimiento = $fecha_nacimiento;
     }
-*/
+
     public function guardar () {
     	
         $sql = "INSERT INTO Persona (id_persona, nombre, apellido, id_tipo_documento, numero_documento, fecha_nacimiento, sexo) VALUES"
